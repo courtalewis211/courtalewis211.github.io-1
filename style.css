@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(images/bg-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    color: white;
+}
+.outerCon{
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
+    padding: 55px 75px 0 75px;
+    width: 100vw;
+}
+.logo{
+    height: 3em;
+}
+.con1{
+    align-content: center;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 65px 0 0 0;
+}
+.bigSvg{
+    height: 28em;
+}
+.con1b{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 0 0 0;
+}
+.con1 > div{
+    flex:1;
+}
+.heading{
+    font-family: 'Poppins', sans-serif;
+    font-size:36px;
+    letter-spacing: 1px;
+    line-height: 50px;
+    margin: 0 0 20px 0;
+    width: 70%;
+}
+.para{
+    font-family: 'Open Sans', sans-serif;
+    font-size:15px;
+    letter-spacing: 1px;
+    margin: 0 0 20px 0;
+    opacity: 0.9;
+    width:70%;
+}
+.btn{
+    background-color: white;
+    border: 1px solid hsl(300, 69%, 71%);
+    border-radius: 30px;
+    box-shadow: 0 3px hsla(0,0%,0%,0.2);
+    color:hsl(257, 40%, 49%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    outline: none;
+    padding: 12px 60px;
+    width: 11.5em;
+}
+.btn:hover{
+    background-color: hsl(300, 69%, 71%);
+    color: white;
+}
+.btn:active{
+    transform: translateY(3px);
+    box-shadow: none;
+}
+.divSocial{
+    align-items: flex-end;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0 0 0;
+    width: 87%;
+}
+.divSocial div{
+    align-items: center;
+    border: 1px solid white;
+    border-radius: 50%;
+    display:flex;
+    height: 35px;
+    justify-content: center;
+    margin: 0 20px 0 0;
+    width: 35px;
+}
+.divSocial div:hover{
+    color: hsl(300, 69%, 71%);
+    border:2px solid hsl(300, 69%, 71%);
+}
+.fab{
+    font-size: 20px;
+}
+/* ================================================================ */
+@media (max-width: 1050px){
+    body{
+        background-image: url("images/bg-mobile.svg");
+    }
+    .outerCon{
+        padding: 40px;
+    }
+    .con1{
+        flex-direction: column;
+    }
+    .con1a{
+        text-align: center;
+    }
+    .bigSvg{
+        height: auto;
+        width: 35em;
+    }
+    .con1b{
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+    .heading{
+        width: 100%;
+    }
+    .para{
+        width: 100%;
+    }
+    .divSocial{
+        align-items: center;
+        justify-content: center;
+        padding: 60px 0 0 25px;
+        width: 100%;
+    }
+    .divSocial div{
+        margin: 0 20px 0 0;
+    }
+    footer{
+        background-color:hsl(300, 69%, 71%);
+    }
+}
+
+/* ======================================================= */
+@media (max-width: 870px){
+    .bigSvg{
+        height: auto;
+        width: 25em;
+    }
+}
+/* ================================================================== */
+@media(max-width: 376px){
+    .outerCon{
+        padding: 28px;
+    }
+    .logo{
+        height: auto;
+        width: 10em;
+    }
+    .bigSvg{
+        height: auto;
+        width: 19em;
+    }
+    .heading{
+        font-size: 27px;
+        line-height: 40px;
+    }
+    .para{
+        margin: 0 0 30px 0;
+    }
+}
